@@ -1,0 +1,17 @@
+{
+  "name": "token-subgraph",
+  "description": "Token Test Subgraph",
+  "version": "1.0.0",
+  "author": "ignacioceaglio@protonmail.com",
+  "license": "MIT",
+  "scripts": {
+    "codegen": "graph codegen ./token.yaml",
+    "build": "graph build ./token.yaml",
+    "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ nachoxt17/usdt-demostrative-subgraph ./token.yaml --access-token"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "0.20.0",
+    "@graphprotocol/graph-ts": "^0.20.1",
+    "typescript": "^4.2.4"
+  }
+}
